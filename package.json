@@ -19,6 +19,7 @@
       "import": "./dist/openapi.js"
     }
   },
+  "files": ["dist"],
   "author": "Henrik Hall",
   "license": "Apache-2.0",
   "repository": {
