@@ -43,8 +43,11 @@ All of these request handlers will be typed correctly using the
 
 #### Operation Resolver
 
+This functionality needs to be imported using the `/resolver` path since
+the functionality is optional and not part of the main exports.
+
 ```
-import { openApiResolver, OperationHandlers } from 'express-openapi-helpers';
+import { openApiResolver, OperationHandlers } from 'express-openapi-helpers/resolver';
 import { operations } from './gen/my-api.d.ts';
 
 const operations: OperationHandlers<operations> = {
@@ -68,7 +71,7 @@ app.use(OpenApiValidator.middleware({
 Alternatively, you can use the `OpenApiResolver` class to define and register the operations:
 
 ```
-import { OpenApiResolver } from 'express-openapi-helpers';
+import { OpenApiResolver } from 'express-openapi-helpers/resolver';
 import { operations } from './gen/my-api.d.ts';
 
 const resolver = new OpenApiResolver<operations>()
