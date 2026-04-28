@@ -1,6 +1,6 @@
 {
   "name": "express-openapi-helpers",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "OpenAPI typed express router and operation resolver for express-openapi-validator",
   "type": "module",
   "main": "./dist/index.js",
@@ -19,7 +19,9 @@
       "import": "./dist/openapi.js"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "author": "Henrik Hall",
   "license": "Apache-2.0",
   "repository": {
