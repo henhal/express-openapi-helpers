@@ -1,6 +1,6 @@
 {
   "name": "express-openapi-helpers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "OpenAPI typed express router and operation resolver for express-openapi-validator",
   "type": "module",
   "main": "./dist/index.js",
